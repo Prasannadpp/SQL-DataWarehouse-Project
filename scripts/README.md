@@ -1,15 +1,10 @@
 
-## 📃 **Scripts**  
+**Scripts**  
 - Ensuring **data reliability and efficiency** is critical in a **Modern Data Warehouse**.  
 - This section describes **scripts, procedures, and transformations** used in the **ETL pipeline** to maintain **high-quality, structured, and efficient data.**
-  
----
 
-![data_layer](https://github.com/user-attachments/assets/d298da24-6a18-4476-93d9-d4709a33b6af)
 
----
-
-## 📂 **File Structure**  
+ **File Structure**  
 
 ```
 scripts/                                    # Contains SQL scripts for data processing  
@@ -31,14 +26,14 @@ scripts/                                    # Contains SQL scripts for data proc
 ---
 
 ## 🟤 **Bronze Layer (Raw Data Storage)**  
-📌 The **Bronze Layer** holds raw, unprocessed data from external sources before any transformation.  
+ The **Bronze Layer** holds raw, unprocessed data from external sources before any transformation.  
 
-### ➡️ **`scripts/bronze/ddl_bronze.sql`**  
+###  **`scripts/bronze/ddl_bronze.sql`**  
 ✔️ Creates tables in the **Bronze schema**, ensuring **fresh data ingestion**.  
 ✔️ Drops existing tables (if they exist) to maintain **schema consistency**.  
 ✔️ Run this script **before loading new raw data**.  
 
-### ➡️ **`scripts/bronze/proc_load_bronze.sql`**  
+###  **`scripts/bronze/proc_load_bronze.sql`**  
 ✔️ A **stored procedure** to load raw data from **CSV files** into the Bronze schema.  
 ✔️ **Key Features:**  
 - 🗑️ **Truncates** existing Bronze tables before inserting new data.  
@@ -50,11 +45,11 @@ scripts/                                    # Contains SQL scripts for data proc
 ## ⚪ **Silver Layer (Clean & Structured Data)**  
 📌 The **Silver Layer** applies **data validation, standardization, and transformations**.  
 
-### ➡️ **`scripts/silver/ddl_silver.sql`**  
+###  **`scripts/silver/ddl_silver.sql`**  
 ✔️ Defines tables in the **Silver schema** for structured, clean data.  
 ✔️ Drops existing tables **to maintain an up-to-date schema**.  
 
-### ➡️ **`scripts/silver/proc_load_silver.sql`**  
+###  **`scripts/silver/proc_load_silver.sql`**  
 ✔️ A **stored procedure** that performs **ETL (Extract, Transform, Load)** to move data from **Bronze → Silver**.  
 ✔️ **Key Features:**  
 - 📤 **Extracts** data from Bronze tables.  
@@ -75,16 +70,16 @@ scripts/                                    # Contains SQL scripts for data proc
 
 ---
 
-## 🚀 **Why This Structure?**  
-✅ **Efficient Data Management** – Organizes data into structured layers.  
-✅ **Faster Query Performance** – Optimized views for analytics.  
-✅ **Scalability** – Easily adapts to new data sources.  
-✅ **Data Integrity** – Quality checks at each stage ensure accurate reporting.  
+ **Why This Structure?**  
+**Efficient Data Management** – Organizes data into structured layers.  
+**Faster Query Performance** – Optimized views for analytics.  
+**Scalability** – Easily adapts to new data sources.  
+**Data Integrity** – Quality checks at each stage ensure accurate reporting.  
 
 ---
 ###  ℹ️ More Details
-➡️ [Naming Conventions](docs/warehouse/naming_conventions.md)
+➡️ [![Naming Conventions](docs/warehouse/naming_conventions.md)](docs/warehouse/naming_conventions.md)
 
-➡️ [Data Catalog For the Gold Layer](docs/gold/data_catalog.md)
+➡️ [![Data Catalog For the Gold Layer](docs/gold/data_catalog.md)](docs/gold/data_catalog.md)
 
-➡️ [Tests](tests)
+➡️ [![Tests](tests)](tests)

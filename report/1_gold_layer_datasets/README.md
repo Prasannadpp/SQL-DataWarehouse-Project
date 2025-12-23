@@ -52,5 +52,4 @@ This section describes the tables in the Gold layer of the data warehouse, along
 
 * PK: Primary Key
 * FK: Foreign Key
-* More Info about the gold layer : [docs/gold](docs/gold)
-* More info about the gold scripts : [scripts/gold](scripts/gold/ddl_gold.sql)
+

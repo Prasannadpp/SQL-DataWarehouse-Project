@@ -1,11 +1,7 @@
 ## 🗄️ **Documentation & Resources**  
 
-📌 This section contains **screenshots, diagrams, and supporting resources** for understanding the **ETL pipeline** and **Data Warehouse architecture**.  
+📌 This section contains supporting resources for understanding the **ETL pipeline** and **Data Warehouse architecture**.  
 
----
-
-
----
 
 ## 📂 **File Structure**  
 
@@ -35,5 +31,4 @@ docs/                                      # Contains all documentation & visual
 │   ├──  Data_Architecture.png               # Architecture of the entire warehouse  
 │  
 ```  
-
----
+[![Data WareHouse Architecture](docs/warehouse/Data_Architecture.png)](docs/warehouse/Data_Architecture.png)

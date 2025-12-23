@@ -3,7 +3,6 @@
 
 This source file contains two directories: one from the CRM source and another from the ERP source.
 
-```
 dataset/
 ├── source_crm
 │   ├── cust_info.csv             # Customer information table         
@@ -13,11 +12,6 @@ dataset/
     ├── cust_az12.csv             # Customer extra information table
     ├── erp_loc_a101.csv          # Location information table 
     ├── erp_px_cat_g1v2.csv       # Product category information table
-```
-
-➡️ For more inofo about Dataset visit `doc/warehouse/` [Link](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/tree/main/docs/warehouse)
-
----
 
 ## 🗄️ Tables
 
