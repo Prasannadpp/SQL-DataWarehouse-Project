@@ -83,8 +83,8 @@ scripts/                                    # Contains SQL scripts for data proc
 
 ---
 ###  ℹ️ More Details
-➡️ [Naming Conventions](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/blob/main/docs/warehouse/naming_conventions.md)
+➡️ [Naming Conventions](docs/warehouse/naming_conventions.md)
 
-➡️ [Data Catalog For the Gold Layer](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/blob/main/docs/gold/data_catalog.md)
+➡️ [Data Catalog For the Gold Layer](docs/gold/data_catalog.md)
 
-➡️ [Tests](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/tree/main/tests)
+➡️ [Tests](tests)
