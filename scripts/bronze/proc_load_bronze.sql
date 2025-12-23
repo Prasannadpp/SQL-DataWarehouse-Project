@@ -58,7 +58,7 @@ BEGIN
 	-- Truncate the Table & then Import the csv file
 	TRUNCATE TABLE bronze.crm_cust_info;
 	COPY bronze.crm_cust_info
-	FROM '/app/datasets/source_crm/cust_info.csv' 
+	FROM '/Users/durgaprasannapeddireddi/Desktop/SQL-Data-Warehouse-Project-main/datasets/source_crm/cust_info.csv' 
 	DELIMITER ','
 	CSV HEADER;
 	GET DIAGNOSTICS rows_count = ROW_COUNT;
@@ -79,7 +79,7 @@ BEGIN
 	-- Truncate the Table & then Import the csv file
 	TRUNCATE TABLE bronze.crm_prd_info ;
 	COPY bronze.crm_prd_info
-	FROM '/app/datasets/source_crm/prd_info.csv'
+	FROM '/Users/durgaprasannapeddireddi/Desktop/SQL-Data-Warehouse-Project-main/datasets/source_crm/prd_info.csv'
 	DELIMITER ','
 	CSV HEADER;
 	GET DIAGNOSTICS rows_count = ROW_COUNT;
@@ -102,7 +102,7 @@ BEGIN
 	-- Truncate the Table & then Import the csv file
 	TRUNCATE TABLE bronze.crm_sales_details;
 	COPY bronze.crm_sales_details
-	FROM '/app/datasets/source_crm/sales_details.csv'
+	FROM '/Users/durgaprasannapeddireddi/Desktop/SQL-Data-Warehouse-Project-main/datasets/source_crm/sales_details.csv'
 	DELIMITER ','
 	CSV HEADER;
 	GET DIAGNOSTICS rows_count = ROW_COUNT;
@@ -129,7 +129,7 @@ BEGIN
 	-- Truncate the Table & then Import the csv file
 	TRUNCATE TABLE bronze.erp_cust_az12;
 	COPY bronze.erp_cust_az12
-	FROM '/app/datasets/source_erp/CUST_AZ12.csv'
+	FROM '/Users/durgaprasannapeddireddi/Desktop/SQL-Data-Warehouse-Project-main/datasets/source_erp/CUST_AZ12.csv'
 	DELIMITER ','
 	CSV HEADER;
 	GET DIAGNOSTICS rows_count = ROW_COUNT;
@@ -151,7 +151,7 @@ BEGIN
 	-- Truncate the Table & then Import the csv file
 	TRUNCATE TABLE bronze.erp_loc_a101;
 	COPY bronze.erp_loc_a101
-	FROM '/app/datasets/source_erp/LOC_A101.csv'
+	FROM '/Users/durgaprasannapeddireddi/Desktop/SQL-Data-Warehouse-Project-main/datasets/source_erp/LOC_A101.csv'
 	DELIMITER ','
 	CSV HEADER;
 	GET DIAGNOSTICS rows_count = ROW_COUNT;
@@ -173,7 +173,7 @@ BEGIN
 	-- Truncate the Table & then Import the csv file
 	TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 	COPY bronze.erp_px_cat_g1v2
-	FROM '/app/datasets/source_erp/PX_CAT_G1V2.csv'
+	FROM '/Users/durgaprasannapeddireddi/Desktop/SQL-Data-Warehouse-Project-main/datasets/source_erp/PX_CAT_G1V2.csv'
 	DELIMITER ','
 	CSV HEADER;
 	GET DIAGNOSTICS rows_count = ROW_COUNT;
