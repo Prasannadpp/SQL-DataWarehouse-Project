@@ -13,6 +13,7 @@ dataset/
     ├── erp_loc_a101.csv          # Location information table 
     ├── erp_px_cat_g1v2.csv       # Product category information table
 
+
 ## 🗄️ Tables
 
 ### ➡️ 1. Customer Information (`Customer Info`)
